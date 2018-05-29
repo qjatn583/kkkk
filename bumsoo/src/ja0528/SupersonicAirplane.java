@@ -1,0 +1,20 @@
+package ja0528;
+
+public class SupersonicAirplane {
+//1의 값을 갖는 NORMAL 상수정의
+	//2의 값을 갖는SUPERSONIC상수정의
+public static final int NORMAL=1;
+public static final int SUPERSONIC=2;
+
+public int flyMode = NORMAL;
+
+//fiy메소드 재정의
+//@override
+public void fly() {
+	if(flyMode==SUPERSONIC) {
+		System.out.println("초음속비행합니다.");
+	}else {
+		super.fly();
+	}
+}
+}
